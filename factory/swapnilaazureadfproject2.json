@@ -1,0 +1,9 @@
+{
+	"name": "swapnilaazureadfproject2",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "94753a31-9236-474b-9d06-fbb7d5cb775e",
+		"tenantId": "86d5f41a-2192-4050-b20a-19f0ff154b86"
+	}
+}

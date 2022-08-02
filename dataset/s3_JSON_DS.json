@@ -1,0 +1,28 @@
+{
+	"name": "s3_JSON_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "S3_LS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"folderPath": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3Location",
+				"bucketName": "swapnilaiotdata11",
+				"folderPath": {
+					"value": "@dataset().folderPath",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
